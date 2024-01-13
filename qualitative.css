@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #0F1035;
+  background-color: #DCF2F1;
+}
+
+h3 {
+  margin-left: 30px;
+}
+
+.prog {
+  margin-left: 40px;
+}
+
+span {
+  margin-left: 40px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: #0F1035;
+}
+
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #7FC7D9;
+  text-decoration: none;
+}
+
+.nav {
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #7FC7D9;
+}
+
+.nav .logo {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.nav .nav-links {
+  column-gap: 20px;
+  list-style: none;
+}
+
+.nav .nav-links a {
+  transition: all 0.2s linear;
+  padding: 10px 14px;
+}
+
+.nav.openSearch .nav-links a {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav .search-icon {
+  color: #7FC7D9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav .search-box {
+  position: absolute;
+  right: 250px;
+  height: 45px;
+  max-width: 555px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear;
+}
+
+.nav.openSearch .search-box {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  left: 15px;
+  color: #7FC7D9;
+  transform: translateY(-50%);
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 15px 0 45px;
+}
+
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+
+  .nav .search-box {
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+
+  .nav .search-box {
+    right: 100px;
+    max-width: 400px;
+  }
+}
+
+.link:hover {
+  background: #7FC7D9;
+  color: #365486;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #7FC7D9,
+    0 0 25px #7FC7D9;
+  transition: .5s;
+}
+
+.logo {
+  color: #7FC7D9;
+}
+
+progress {
+  width: 300px;
+  height: 25px;
+  border-radius: 20px;
+  border: 2px solid #0F1035;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #DCF2F1;
+  border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #0F1035;
+  border-radius: 20px;
+}
+
+input[type=checkbox] {
+  accent-color: #7FC7D9;
+  transition: accent-color 0.3s ease;
+}
+
+input[type=checkbox]:hover {
+  accent-color: #7FC7D9;
+}
+
+.search-results .result[data-keyword*="design"] {
+  font-weight: bold;
+  color: #365486;
+}
+
+.search-box {
+  position: relative;
+  margin: 10px auto;
+  width: 60%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-box input[type="text"]::placeholder {
+  color: 365486 !important;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  background-color: #ffffff;
+  border: solid 365486 2px;
+}
+
+.result {
+  cursor: pointer;
+
+}
+
+.result:hover {
+  background-color: #0F1035;
+  color: #DCF2F1;
+}
+
+a:hover {
+  color: #0F1035;
+}
+
+.logo-name:hover {
+  color: #7FC7D9;
+}
+
+.button {
+  padding: 6px 12px;
+  border-radius: 10px;
+  transition: 1s;
+  border: 2px solid #0F1035;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #0F1035;
+  background-color: #DCF2F1;
+}
+
+.button:hover {
+  background: #0F1035;
+  color: #DCF2F1;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #0F1035,
+    0 0 25px #0F1035;
+  transition: 1s;
+}
+
+.chapter1 {
+  background-color: #DCF2F1;
+  color: #0F1035;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.chapter2 {
+  background-color: #365486;
+  color: #DCF2F1;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.chapter3 {
+  padding-top: 20px;
+  background-color: #DCF2F1;
+  color: #0F1035;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.overall {
+  margin-left: 55px;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #0F1035;
+  color: #7FC7D9;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-a:hover {
+  color: #365486;
+}

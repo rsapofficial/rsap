@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="rsap.png">
+  <link rel="stylesheet" href="home.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="">
+  <script src="navbar.js" defer></script>
+</head>
+
+<body>
+    <div class="name">
+      <img src="rsap.png" height="1px" alt="rsapofficial logo">
+      <h1>Research Study</h1>
+      <h1>Assistance</h1>
+      <h1>Platform</h1>
+      <p style="margin-left: 20px; margin-right: 20px; text-align: center; letter-spacing: 3px;">"Research made
+        easier"</p>
+    </div>
+  
+
+  <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <label class="logo"><a href="home.html">RSAP</a></label>
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a class="link" href="home.html">Home</a></li>
+      <li><a class="link" href="quali.html">Qualitative</a></li>
+      <li><a class="link" href="quanti.html">Quantitative</a></li>
+      <li><a class="link" href="Progress Tracker.html">Progress Tracker</a></li>
+      <li><a class="link" href="tools.html">Tools</a></li>
+    </ul>
+
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+      <i class="uil uil-search search-icon"></i>
+      <input type="text" placeholder="Search here..." />
+    </div>
+  </nav>
+
+  <div class="info-section">
+    <div class="info-box">
+        <h3>What inspired us?</h3><br>
+        <p>As fellow students who engages in conducting a study, we gained a
+            first hand
+            experience on how
+            challenging it can be to conduct a study. This experience inspired us to create a web application that
+            assist students in conducting their own studies.</p>
+    </div>
+    <div class="info-box">
+        <h3>Our Goal</h3><br>
+        <p>Our main aim is to help students with their studies and gather useful
+            feedback to make our web
+            application even better. We want to make sure that students have all the support they need to succeed in
+            their academic journey. By listening to their experiences and suggestions, we hope to keep improving our
+            web application to make it more user-friendly and effective. Your input is crucial in shaping the future
+            of our platform, and we're committed to making it a helpful and accessible tool for all students. </p>
+    </div>
+    <div class="info-box">
+        <h3>What is our website about?</h3><br>
+        <p>Research Study Assistance Platform (RSAP) is a web app that contains
+            research related features that seeks
+            to provide assistance to students in conducting their own studies. This features includes a progress
+            tracker, a compilation of research gateways, and many more. It has a user-friendly interface
+            aimed specifically for students. </p>
+    </div>
+</div>
+
+<div class="developer-section">
+    <div class="developer-box">
+        <img src="padilla.png" alt="Developer 1" class="developer-img">
+        <div class="developer-info">
+            <h3>Researcher</h3>
+            <p>Name:</p>
+            <p>Gabriel Zues S. Padilla</p>
+            <p>Contact:</p>
+            <p>09272196104</p>
+        </div>
+    </div>
+
+    <div class="developer-box">
+        <img src="bogz.png" alt="Developer 2" class="developer-img">
+        <div class="developer-info">
+            <h3>Developer</h3>
+            <p>Name:</p>
+            <p>Cyrus Vhon S. Obog</p>
+            <p>Contact:</p>
+            <p>09456771794</p>
+        </div>
+    </div>
+
+    <div class="developer-box">
+        <img src="niel.png" alt="Developer 3" class="developer-img">
+        <div class="developer-info">
+            <h3>Researcher</h3>
+            <p>Name:</p>
+            <p>Daniel De Guzman</p>
+            <p>Contact:</p>
+            <p>09456771794</p>
+        </div>
+    </div>
+</div>
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="contact-info">
+            <p>Contact us:</p>
+            <p>Purok 7, BRGY. Timugan, St. Yamashita, Los Baños Laguna</p>
+            <p>Email: rsapwebapp@gmail.com</p>
+            <p>Phone: (63) 945-6771-794</p>
+        </div><br>
+
+        <div class="social-media">
+            <a class="footer-a" href="https://www.facebook.com/profile.php?id=61555785112857&mibextid=ZbWKwL" target="_blank"><i class="uil uil-facebook"></i></a>         
+            <a class="footer-a" href="" target="_blank"><i class="uil uil-instagram"></i></a>           
+            <a class="footer-a" href="https://x.com/rsapofficial?t=7MMRRZhZCYfyJ23C38EP3g&s=09" target="_blank"><i class="uil uil-twitter"></i></a>
+        </div>
+
+      <div class="footer-links">
+        <a class="footer-a" href="#">Privacy Policy</a> 
+        <a class="footer-a">|</a>
+        <a class="footer-a" href="#">Sitemap</a><br>
+        
+        <div class="copyright">
+          &copy; 2024 RSAP. All rights reserved.
+      </div>
+    </div>
+    </div>
+</footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var nameElement = document.querySelector('.name');
+      var navElement = document.querySelector('.nav');
+
+      nameElement.classList.add('animation-complete');
+      navElement.classList.add('animation-complete');
+    });
+  </script>
+</body>
+</html>
