@@ -356,8 +356,6 @@ a {
       color: #0F1035;
       padding-left: 60px;
       padding-right: 60px;
-      text-align: justify;
-      text-justify: inter-word;
     }
 
     .chapter-2 {
@@ -366,8 +364,6 @@ a {
       padding-top: 20px;
       padding-left: 60px;
       padding-right: 60px;
-      text-align: justify;
-      text-justify: inter-word;
     }
 
     .chapter-3 {
@@ -376,8 +372,6 @@ a {
       color: #0F1035;
       padding-left: 60px;
       padding-right: 60px;
-      text-align: justify;
-      text-justify: inter-word;
     }
 
     .chapter-4 {
@@ -386,8 +380,6 @@ a {
       padding-top: 20px;
       padding-left: 60px;
       padding-right: 60px;
-      text-align: justify;
-      text-justify: inter-word;
     }
 
     .chapter-5 {
@@ -396,8 +388,6 @@ a {
       color: #0F1035;
       padding-left: 60px;
       padding-right: 60px;
-      text-align: justify;
-      text-justify: inter-word;
     }
 
     .footer{
@@ -412,4 +402,9 @@ a {
 
     .footer-a:hover {
       color: #365486;
+
+      p, h3 {
+      text-align: justify;
+      text-justify: inter-word;
+      }
     }
