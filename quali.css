@@ -388,7 +388,7 @@ a {
       color: #365486;
     }
 
-    p, h3 {
+    .p, h3 {
       text-align: justify;
       text-justify: inter-word;
     }
