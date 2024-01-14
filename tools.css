@@ -212,13 +212,13 @@ a {
   }
 
   .research {
-    color: #0F1035;
+    color: #DCF2F1;
     font-style: italic;
     text-decoration: underline;
   }
 
   .research:hover {
-    color: #365486;
+    color: #0F1035;
     text-decoration: underline;
   }
 
@@ -244,4 +244,12 @@ a {
 
   .footer-a:hover {
     color: #365486;
+  }
+
+  .second {
+    padding-top: 20px;
+    background-color: #365486;
+    color: #DCF2F1;
+    padding-left: 60px;
+    padding-right: 60px;
   }
