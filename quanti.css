@@ -356,6 +356,7 @@ a {
       color: #0F1035;
       padding-left: 60px;
       padding-right: 60px;
+      text-align: justify;
     }
 
     .chapter-2 {
@@ -402,9 +403,9 @@ a {
 
     .footer-a:hover {
       color: #365486;
+    }
 
-      p, h3 {
+    p, h3 {
       text-align: justify;
       text-justify: inter-word;
-      }
     }

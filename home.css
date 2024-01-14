@@ -22,6 +22,7 @@ body {
   width: 100%;
   padding: 15px 200px;
   background: #0F1035;
+  z-index: 1; /* Set z-index to a higher value */
 }
 
 .nav,
@@ -153,7 +154,7 @@ a {
   }
 
   .nav .navOpenBtn {
-    color: #fff;
+    color: #7FC7D9;
     font-size: 20px;
     cursor: pointer;
   }
@@ -162,7 +163,7 @@ a {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #7FC7D9;
+    color: #fff;
     font-size: 20px;
     cursor: pointer;
   }
@@ -176,42 +177,39 @@ a {
   }
 }
 
-.link:hover{
-    background: #7FC7D9;
-    color: #0F1035;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #7FC7D9,
-                0 0 25px #7FC7D9;
-    transition: .5s;            
-  }
+.link:hover {
+  background: #7FC7D9;
+  color: #0F1035;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #7FC7D9, 0 0 25px #7FC7D9;
+  transition: .5s;
+}
 
-  .logo {
-    color: #7FC7D9;
-  }
+.logo {
+  color: #7FC7D9;
+}
 
-  .name {
-    text-align: center;
-    margin: auto;
-    max-width: 600px;
-    margin-top: 220px;
-    text-shadow: 1px 1px 1px;
-    color: #0F1035;
-  }
+.name {
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  margin-top: 160px;
+  text-shadow: 1px 1px 1px;
+  color: #0F1035;
+}
 
 @keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
 
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -220,10 +218,10 @@ a {
   }
 }
 
-.footer{
-  margin-top: auto; 
-  background-color: #0F1035; 
-  color: #7FC7D9; 
+.footer {
+  margin-top: auto;
+  background-color: #0F1035;
+  color: #7FC7D9;
   margin-top: 20px;
   text-align: center;
   padding-top: 10px;
@@ -257,7 +255,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   background-color: #DCF2F1;
-  color: white;
   padding: 30px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -275,28 +272,120 @@ a {
 }
 
 .developer-info {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding-left: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
 }
 
 .developer-img {
-width: 100px;
-height: 100px;
-margin-bottom: 10px;
-border-bottom: 2px solid #0F1035;
-margin-left: auto;
-margin-right: auto; 
-background-color: #DCF2F1;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0F1035;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DCF2F1;
 }
 
 @media (max-width: 900px) {
-  .info-box, .developer-box {
-      flex-basis: 100%; 
+  .info-box,
+  .developer-box {
+    flex-basis: 100%;
   }
 }
 
 .footer-a:hover {
   color: #365486;
+}
+
+.slider {
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 2px;
+  border: #0F1035 solid;
+}
+
+.slide_viewer {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:nth-of-type(1),
+.slide:nth-of-type(2),
+.slide:nth-of-type(3),
+.slide:nth-of-type(4) {
+  background-size: cover;
+}
+
+.slide:nth-of-type(1) {
+  background: url("image1.png") center center no-repeat;
+}
+
+.slide:nth-of-type(2) {
+  background: url("image2.png") center center no-repeat;
+}
+
+.slide:nth-of-type(3) {
+  background: url("image3.png") center center no-repeat;
+}
+
+.slide:nth-of-type(4) {
+  background: url("image4.png") center center no-repeat;
+}
+
+.slide_buttons {
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #0F1035;
+  font-size: 16px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active,
+.slide_btn:hover {
+  color: #365486;
+  cursor: pointer;
+}
+
+.directional_nav {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .slider {
+    max-width: 240px;
+  }
+
+  .slide_viewer {
+    height: 120px;
+  }
+
+  .slide_buttons {
+    font-size: 14px;
+  }
 }
